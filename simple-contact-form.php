@@ -55,7 +55,7 @@ class  SimpleContactForm{
             'menu_icon' => 'dashicons-media-text',
 
         );
-        register_post_type('simple-contact-form', $agrs);
+        register_post_type('simple_contact_form', $agrs);
     }//end create_custom_post_type
 
 
@@ -157,7 +157,7 @@ class  SimpleContactForm{
            return new WP_REST_Response('message not sent',442);
         }
         $post_id = wp_insert_post([
-            'post_type' => 'simple_contact_update_form',
+            'post_type' => 'simple_contact_form',
             'post_title' => 'Contact enquiry',
             'post_status' => 'publish',
         ]);
