@@ -62,6 +62,7 @@ class  SimpleContactForm{
 
     public function load_assets()
     {
+        // echo "<script>alert('IT LOADED')</script>";
         wp_enqueue_style(
             'simple-contact-form',
             plugin_dir_url( __FILE__ ) . 'css/simple-contact-form.css',
